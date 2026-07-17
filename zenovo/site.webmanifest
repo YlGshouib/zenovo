@@ -1,0 +1,16 @@
+{
+  "name": "Zenovo Laptop Repair",
+  "short_name": "Zenovo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "description": "Professional Laptop Repair and IT Services",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
