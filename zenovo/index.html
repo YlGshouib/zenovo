@@ -3,19 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebCraft Pro — Modern Website Design & Development</title>
-  <meta name="description" content="Professional website design & development services. Free domain, hosting, SSL, SEO, WhatsApp integration & 1 year support." />
+
+  <!-- CACHE BUSTING -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- SEO CORE -->
+  <title>WebCraft Pro — Modern Website Design & Development Services | Free Domain & Hosting</title>
+  <meta name="description" content="Professional website design & development for businesses. Free domain, hosting, SSL, SEO-friendly, WhatsApp integration, responsive design. 1 year support included. Get online today!" />
+  <meta name="keywords" content="website design, web development, business website, responsive design, SEO friendly website, free domain, free hosting, SSL certificate, WhatsApp integration, professional website, small business website, startup website" />
+  <meta name="author" content="WebCraft Pro" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="WebCraft Pro — Modern Website Design & Development Services" />
+  <meta property="og:description" content="We build modern, high-performance websites for businesses. Free domain, hosting, SSL, SEO & WhatsApp integration. Get your business online today!" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WebCraft Pro" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WebCraft Pro — Modern Website Design & Development" />
+  <meta name="twitter:description" content="Professional websites with free domain, hosting, SSL & WhatsApp. Launch your business online today!" />
+  <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- FAVICONS & MANIFEST -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#6366f1" />
+
+  <!-- STRUCTURED DATA — LocalBusiness + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://yourdomain.com/#website",
+        "url": "https://yourdomain.com/",
+        "name": "WebCraft Pro",
+        "description": "Professional website design and development services for businesses",
+        "publisher": { "@id": "https://yourdomain.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://yourdomain.com/#organization",
+        "name": "WebCraft Pro",
+        "url": "https://yourdomain.com/",
+        "logo": "https://yourdomain.com/logo.png",
+        "sameAs": [
+          "https://facebook.com/webcraftpro",
+          "https://instagram.com/webcraftpro",
+          "https://linkedin.com/company/webcraftpro"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-1234567890",
+          "contactType": "customer service",
+          "availableLanguage": ["English"]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://yourdomain.com/#service",
+        "name": "Website Design & Development",
+        "provider": { "@id": "https://yourdomain.com/#organization" },
+        "areaServed": "Worldwide",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Website Packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Business Website Package",
+                "description": "Complete website with free domain, hosting, SSL, SEO, WhatsApp integration and 1 year support"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to build my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most business websites are completed within 5-7 business days. Complex projects with custom features may take 10-14 days. We keep you updated at every stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I really get a free domain and hosting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We include a free .com or .in domain and premium hosting for the first year. After that, you can renew at standard market rates or migrate anywhere you prefer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my website work on mobile phones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Every website we build is fully responsive, meaning it adapts beautifully to mobile phones, tablets, laptops, and desktops automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I update the website myself later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We build on user-friendly platforms or provide a simple admin panel. You'll be able to edit text, images, and add new pages without any coding knowledge."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+<base target="_blank">
 </head>
 <body>
 
-  <!-- Background Particles -->
   <canvas id="particles"></canvas>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="floating-cards">
       <div class="float-card">
@@ -48,9 +182,7 @@
       <h1>Grow Your Business with a Professional Online Presence</h1>
       <p>We design and build modern, high-performance websites that help your business attract more customers and build trust online.</p>
       <div class="cta-group">
-        <button class="btn btn-primary" onclick="openModal()">
-          📞 Get Free Consultation
-        </button>
+        <button class="btn btn-primary" onclick="openModal()">📞 Get Free Consultation</button>
         <a href="#features" class="btn btn-ghost">Explore Services →</a>
       </div>
     </div>
@@ -206,7 +338,7 @@
     <p>Professional • Fast • Affordable</p>
     <div class="cta-group">
       <button class="btn btn-primary" onclick="openModal()">📞 Contact for Free Consultation</button>
-      <a href="https://wa.me/911234567890" target="_blank" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
+      <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
     </div>
   </section>
 
@@ -214,13 +346,18 @@
   <footer>
     <div class="brand">WebCraft Pro</div>
     <p>Professional Website Design & Development Services</p>
-    <p class="copyright">© 2026 All Rights Reserved. Crafted with ❤️ for growing businesses.</p>
+    <nav class="footer-links">
+      <a href="/faq.html">FAQ</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms-and-conditions.html">Terms & Conditions</a>
+    </nav>
+    <p class="copyright">© 2026 WebCraft Pro. All Rights Reserved. Crafted with ❤️ for growing businesses.</p>
   </footer>
 
-  <!-- WHATSAPP FLOAT BUTTON -->
+  <!-- WHATSAPP FLOAT -->
   <div class="whatsapp-float">
     <div class="whatsapp-tooltip">Chat with us on WhatsApp!</div>
-    <a href="https://wa.me/911234567890" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.3A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
