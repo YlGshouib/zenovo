@@ -1,6 +1,6 @@
 {
-  "name": "WebCraft Pro — Modern Website Design & Development",
-  "short_name": "WebCraft Pro",
+  "name": "Zenovo - Modern Website Design & Development",
+  "short_name": "Zenovo",
   "description": "Professional website design and development services with free domain, hosting, SSL, SEO & WhatsApp integration.",
   "start_url": "/",
   "display": "standalone",
@@ -20,5 +20,6 @@
     }
   ],
   "categories": ["business", "productivity"],
-  "lang": "en"
+  "lang": "en",
+  "scope": "/"
 }
