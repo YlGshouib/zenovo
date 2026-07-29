@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZENOVO | Laptop & PC Repair Services</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="site.webmanifest">
+    
+    <style>
+        :root {
+            --bg-dark: #0a1128;
+            --yellow: #ffcc00;
+            --red: #ef4444;
+            --white: #ffffff;
+            --blue: #3b82f6;
+            --text-light: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .text-center { text-align: center; }
+
+        /* Header & Logo */
+        header { background: #000; padding: 15px 0; border-bottom: 2px solid var(--yellow); }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo a { font-size: 28px; font-weight: bold; text-decoration: none; }
+        .logo .zen { color: var(--white); }
+        .logo .ovo { color: var(--blue); }
+        nav a { color: var(--white); margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: var(--yellow); }
+        .btn { background: #25D366; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; }
+
+        /* Typography Highlights */
+        .highlight-yellow { color: var(--yellow); }
+        .highlight-red { color: var(--red); }
+        .highlight-white { color: var(--white); }
+
+        /* Hero Section */
+        .hero { padding: 50px 0; border-bottom: 1px solid #1e293b; }
+        .hero h1 { font-size: 3rem; color: var(--white); }
+        .subtitle { font-size: 2rem; font-weight: bold; margin-bottom: 20px; }
+        .ssd-banner { background: #002244; display: inline-block; padding: 20px 40px; border: 2px solid var(--yellow); border-radius: 10px; margin-top: 20px; }
+        .ssd-banner h2 { font-size: 4rem; margin: 0; }
+        .ssd-banner p { color: var(--yellow); font-weight: bold; font-size: 1.2rem; }
+
+        /* Brands */
+        .brands { padding: 30px 0; }
+        .brands h3 { color: var(--yellow); border-bottom: 1px solid var(--yellow); display: inline-block; padding-bottom: 5px; margin-bottom: 15px; }
+        .brand-list { font-size: 1.5rem; font-weight: bold; color: var(--white); }
+        .brand-list span { margin: 0 15px; }
+
+        /* Services */
+        .services { padding: 50px 0; }
+        .section-title { color: var(--yellow); margin-bottom: 30px; font-size: 1.8rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .service-card { background: #111827; padding: 20px; border-left: 4px solid var(--yellow); border-radius: 5px; }
+        .service-card h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 5px; }
+        .service-card p { font-size: 0.9rem; color: #94a3b8; }
+
+        /* Guarantees */
+        .guarantees { padding: 40px 0; text-align: center; }
+        .warranty-banner { background: var(--yellow); color: #000; padding: 20px; border-radius: 10px; display: inline-block; margin-bottom: 20px; }
+        .warranty-banner h3 { font-size: 2rem; margin: 0; }
+        .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .badges span { background: #1e293b; padding: 10px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
+
+        /* Footer */
+        footer { background: #ffffff; color: #000; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-content { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; }
+        .doorstep h2, .footer-contact h2 { color: #0a1128; font-size: 2.5rem; margin: 0; }
+        .doorstep p, .footer-contact p { color: #64748b; font-weight: bold; margin: 0; }
+        .footer-contact h2 { color: #25D366; }
+        .footer-links { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+        .footer-links a { color: #64748b; text-decoration: none; margin: 0 10px; }
+    </style>
 </head>
 <body>
     <header>
@@ -118,6 +185,23 @@
             <a href="terms-and-conditions.html">Terms & Conditions</a>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            console.log("ZENOVO Website Initialized Successfully.");
+        });
+    </script>
 </body>
 </html>
